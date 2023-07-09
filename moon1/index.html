@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body
+    {background: black;
+color: red;
+    }
+.inverted-border{
+
+width: 200px;
+height: 200px;
+background-color: white;
+border-radius:50%;
+margin: 50px;
+outline: hidden;
+
+
+}
+
+.inverted-border::before{
+content:"" ;
+display: block;
+width: 100%;
+height: 100%;
+background-color: #000;
+border-radius: 50%;
+margin: -30px;
+}
+</style>
+<body>
+<div class="inverted-border"></div>
+<center>moon</center>
+
+
+
+
+
+</body>
+</html>
